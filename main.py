@@ -16,9 +16,8 @@ def turn_on_button():
         print("DEVICE ON")
     else:
         plug = SmartPlug(device["host"])
-        print(device["host"])
-        # asyncio.run(plug.update())
-        # asyncio.run(plug.turn_on())
+        asyncio.run(plug.update())
+        asyncio.run(plug.turn_on())
 
 
 def turn_off_button():
@@ -26,8 +25,8 @@ def turn_off_button():
         print("DEVICE OFF")
     else:
         plug = SmartPlug(device["host"])
-        # asyncio.run(plug.update())
-        # asyncio.run(plug.turn_off())
+        asyncio.run(plug.update())
+        asyncio.run(plug.turn_off())
 
 
 root = Tk()
