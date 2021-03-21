@@ -1,6 +1,6 @@
 from tkinter import *
 import asyncio
-from kasa import SmartPlug
+from smartplug import SmartPlug
 from configparser import ConfigParser
 
 # Read config.ini file
